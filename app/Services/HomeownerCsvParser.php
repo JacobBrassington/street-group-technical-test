@@ -83,7 +83,7 @@ class HomeownerCsvParser
         $homeownerArray = Str::of($homeownerString)->explode(' ');
 
         if (count($homeownerArray) === 3) {
-            $length = strlen($homeownerArray[1]);
+            $length = strlen(preg_replace('/[^a-zA-Z]/', '', $homeownerArray[1]));
 
             $firstName = $length > 1 ? $homeownerArray[1] : null;
             $initial = $length === 1 ? $homeownerArray[1] : null;
