@@ -1,5 +1,18 @@
 ## Street Group Technical Test
 
+### How to run
+This uses laravel sail, not sure on your preferred local development environment, but here's the docs
+https://laravel.com/docs/12.x/sail
+
+Long and short of it is:
+1. Install docker desktop
+2. Run composer install and npm install
+3. Run `./vendor/bin/sail up -d`
+4. Run `./vendor/bin/sail artisan migrate`
+5. Open http://localhost
+
+The work is completed on the root view, with a simple file uploader and submit button.
+
 ### Timeline
 All in all this technical test took me about 1h 10m
 
